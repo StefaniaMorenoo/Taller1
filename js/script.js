@@ -64,7 +64,7 @@ if (ingreso==usuario && ingreso2==pass){
 */
 //Condional multiple
 
-let op= prompt("Digite suma, resta, multiplicacion o division");
+let op= prompt("Digite suma, resta, multiplicacion, division, potencia o raiz");
 let num1= parseInt (prompt("Digite el numero 1"));
 let num2=parseInt (prompt("Digite el numero 2"));
 
@@ -79,7 +79,16 @@ switch (op) {
         console.log(`El resultado de la multiplicacion es ${num1*num2}`);
     break;
     case 'division':
-        console.log(`El resultado de la division es ${num1/num2}`);
+        let res=num1/num2;
+        console.log(`El resultado de la division es ${res.toFixed(2)}`);
+    break;
+    case 'potencia':
+        let pot=num1**num2;
+        console.log(`El resultado de la potencia es ${pot.toFixed(2)}`);
+    break;
+    case 'raiz':
+        let raiz=Math.sqrt(num1)
+        console.log(`El resultado de la raiz cuadrada es ${raiz.toFixed(2)}`);
     break;
     default:
         alert("Opcion no esta en el sistema");
