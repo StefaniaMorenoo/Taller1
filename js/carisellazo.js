@@ -10,11 +10,11 @@ while (i==true) {
   
     if (eleccion==random) {
         console.log (`Usted eligio ${eleccion} y salio ${random}, gano!`)
-        acomulador=acomulador+apuesta;
+        acomulador=acomulador+apuesta+general;
 
     } else if(eleccion!=random){
-        console.log (`Usted eligio Cara y salio${random}, Perdio!`)
-        acomulador=acomulador-apuesta;
+        console.log (`Usted eligio ${eleccion} y salio ${random}, Perdio!`)
+        acomulador=acomulador-apuesta-general;
 
     }
     
