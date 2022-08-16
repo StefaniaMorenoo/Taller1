@@ -7,12 +7,14 @@ while (i==true) {
     let random=Math.floor(Math.random(0)*2); 
     let eleccion=parseInt(prompt("ingrese 0=sello o 1=cara"));
     let apuesta=parseInt(prompt("ingrese la cantidad de su apuesta"));
+  
     if (eleccion==random) {
-        console.log (`el numero random fue ${random}`)
+        console.log (`Usted eligio ${eleccion} y salio ${random}, gano!`)
         acomulador=acomulador+apuesta;
 
     } else if(eleccion!=random){
-        
+        console.log (`Usted eligio Cara y salio${random}, Perdio!`)
+        acomulador=acomulador-apuesta;
 
     }
     
