@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: url("https://media0.giphy.com/media/RHIKETUlUINYvV7CAO/giphy.gif?cid=ecf05e47v9l9cohppluj9d0ubpozjs4p9vy5ynzaz6ypyzck&rid=giphy.gif&ct=g");
+    background-repeat:no-repeat;
+    background-size: cover;
+}

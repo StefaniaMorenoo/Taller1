@@ -106,7 +106,7 @@ while (i==1) {
     
 }
 //Consultar numeros aleatorios
-let ia=1;
+let ia=false;
 do {
     console.log(`Hola soy Stefania`);
     ia=confirm("Seguir 1 o no 2")

@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Convertidor</title>
 </head>
 <body>
     <center>
     <form action="">
-        <label for="">Ingresa un numero</label>
-        <input type="number" id="num1">
-        <label for="">Ingresa otro numero</label>
-        <input type="number" id="num2">
+        <label for="">Ingresa una temperatura</label>
+        <input type="number" id="temp">
 
         <label for="">Seleccione una operación</label>
         <select name="" id="operacion">
@@ -21,11 +19,11 @@
             <option value="3">Multiplicación</option>
             <option value="4">División</option>
         </select>
-        <button type="submit">Calcular</button>
+        <button type="submit" onclick="calcular()">Calcular</button>
     </form>
     </center>
 
-    <script src="js/calculadora.js"></script>
+    <script src="js/convertidor.js"></script>
     
 </body>
 </html>
