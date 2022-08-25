@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/68aafd15b7.js" crossorigin="anonymous"></script>
     <title>Calculadora</title>
 </head>
 <body>
     <center>
+        <h1>Calculadora</h1>
     <form action="">
         <label for="">Ingresa un numero</label>
         <input type="number" id="num1">
@@ -21,8 +23,18 @@
             <option value="3">Multiplicación</option>
             <option value="4">División</option>
         </select>
-        <button type="submit">Calcular</button>
+        <button type="submit" id="button">Calcular</button>
     </form>
+
+    <div id="ops">
+        <button id="sumabtn">suma</button>
+        <button id="restabtn">Resta</button>
+    </div>
+
+    <div id="respuesta">
+        
+    </div>
+
     </center>
 
     <script src="js/calculadora.js"></script>
