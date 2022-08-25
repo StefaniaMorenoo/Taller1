@@ -1,0 +1,18 @@
+#respuesta{
+    visibility: visible;
+}
+
+.correcto{
+color: greenyellow;
+visibility: visible;
+opacity: 1;
+transition: 2s;
+
+}
+
+.incorrecto{
+color: red;
+visibility: visible;
+opacity: 1;
+transition: 1s;
+}
