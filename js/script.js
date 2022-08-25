@@ -104,11 +104,11 @@ while (i==1) {
     console.log(`Hola soy Stefania`);
     i=prompt("Seguir 1 o no 2")
     
-}*/
+}
 //Consultar numeros aleatorios
 let ia=1;
 do {
     console.log(`Hola soy Stefania`);
     ia=confirm("Seguir 1 o no 2")
     
-} while (ia==true);
+} while (ia==true);*/
