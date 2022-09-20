@@ -97,6 +97,7 @@ a{
 
 a:hover{
     color: #9C2759;
+    text-decoration: none;
 }
 
 .exit{
@@ -107,3 +108,18 @@ a:hover{
     display: none;
 }
 
+
+#ini{
+width: 650px;
+height: 500px;
+position: relative;
+top: 90px;
+color: blue;
+margin: auto;
+}
+a{
+  text-decoration: none;
+}
+label{
+  color:var(--blanco);
+}

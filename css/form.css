@@ -99,3 +99,114 @@ label{
     visibility: visible;
     opacity: 1;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/24/10/58/sand-2005066_960_720.jpg");
+    background-repeat:no-repeat;
+    color:#eeee;
+    background-size: cover;
+}
+
+
+h1, h2, h3,h4, h5 {
+    font-family: 'Marcellus', serif;
+}
+#container-grid{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    justify-content: center;
+
+}
+
+nav{
+    font-family: "Marcellus", serif;
+    font-size: 1.3em;
+    z-index:100;
+    max-width: 50px;
+    min-height:600px;
+    width: 100%;
+}
+.menu{
+    width: 250px;
+    height: 100%;
+    background-color: var(--azulnegro);
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    z-index: 300;
+}
+.tittle{
+    background-color: var(--negro2);
+    color:var(--blanco);
+    font-size: 2em;
+    padding:0.5rem;
+    top: -15px;
+}
+.menu i{
+    color:var(--blanco);
+    text-align: center;
+    margin-top: 30px;
+    width: 40px;
+}
+
+.sec1{
+    background-image: url("https://soyhorizonte.com/wp-content/uploads/2020/10/JS-by-SoyHorizonte.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30%;
+
+   
+}
+
+.sec1 img{
+    text-align: center;
+    margin-top: 30px;
+    width: 40px;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+a:hover{
+    color: #9C2759;
+}
+
+.exit{
+    margin-top: 80px;
+}
+
+.re{
+    display: none;
+}
+
