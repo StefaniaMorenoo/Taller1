@@ -1,22 +1,20 @@
-
 function calcular(){
-    let num1=parseInt(document.getElementById("num1").value);
-    let num2=parseInt(document.getElementById("num2").value);
-    let op=document.getElementById("operacion").value;
-    if(op==1){
-        let res=num1+num2;
-        alert(`El numero 1 es ${num1} y el número 2 ${num2} la suma es ${res}`)
-    }else if(op==2){
-        let res=num1-num2;
-        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la resta es ${res}`)
+    let temp=parseInt(document.getElementById("temp").value);
+    let temp1=document.getElementById("temp1").value;
+    let temp2=document.getElementById("temp2").value;
+    if(temp1==1 && temp2==2){
+        let res=(temp*9/5)+32;
+        alert(`La conversion de grados ${temp} a Fahrenheit es ${res}°F`)
+    }else if(temp1==2 && temp2==1){
+        let res=(temp-32)*5/9 ;
+        alert(`La conversion de grados Fahrenheit ${temp} a grados celsius es ${res}`)
    
-    }else if(op==3){
-        let res=num1*num2;
-        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la multiplicación es ${res}`)
+    }else if(temp1==3 && temp2==1){
+        let res=(temp-273.15);
+        alert(`La conversion de Kelvin ${temp} a grados celsius es ${res}`)
    
-    }else if(op==4){
-        let res=num1/num2;
-        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la division es ${res}`)
+    }else{
+        alert(`La conversion no se puede realizar`)
    
     }
     

@@ -18,22 +18,25 @@
                      <div class="col-sm">
                         <h1>Convertidor</h1>
     <form action="">
-        <label for="">Ingresa una temperatura</label>
+        <label for="">Ingresa una temperatura en grados</label>
         <input type="number" class="form-control" id="temp">
 
         <label  class="form-label" for="">Vas a convertir de</label>
-        <select name="" id="temp1">
-            <option value="1">Grados</option>
-            <option value="2">Celsius</option>
+        <select  class="form-control" name="" id="temp1">
+            <option value="1">Celsius</option>
+            <option value="2">Fahrenheit</option>
+            <option value="3">Kelvin</option>
         </select>
-
+        <br>
         <label for="">Deseas convertir a</label>
-        <select class="form-select" name="" id="temp2">
-            <option value="1">Fahrenheit</option>
-            <option value="2">Kelvin</option>
+        <select class="form-control" name="" id="temp2">
+            <option value="1">Celsius</option>
+            <option value="2">Fahrenheit</option>
+            <option value="3">Kelvin</option>
         </select>
+        <br>
         <label for=""></label>
-        <button class="btn btn-primary" type="submit" onclick="calcular()">Calcular</button>
+        <button class="btn btn-primary form-control" type="submit" onclick="calcular()">Calcular</button>
     </form>
                      </div>
                   </div>

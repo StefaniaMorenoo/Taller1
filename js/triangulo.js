@@ -2,21 +2,15 @@
 function calcular(){
     let num1=parseInt(document.getElementById("num1").value);
     let num2=parseInt(document.getElementById("num2").value);
-    let op=document.getElementById("operacion").value;
-    if(op==1){
-        let res=num1+num2;
-        alert(`El numero 1 es ${num1} y el número 2 ${num2} la suma es ${res}`)
-    }else if(op==2){
-        let res=num1-num2;
-        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la resta es ${res}`)
+    let num3=parseInt(document.getElementById("num3").value);
+
+    if(num1==num2 && num2==num3){
+        alert(`Todos los lados son iguales, el triángulo es Equilatero`)
+    }else if(num1==num2 && num2!=num3 || num1==num3 || num2==num3){
+        alert(`Dos lados son iguales, el triángulo es Isósceles`)
    
-    }else if(op==3){
-        let res=num1*num2;
-        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la multiplicación es ${res}`)
-   
-    }else if(op==4){
-        let res=num1/num2;
-        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la division es ${res}`)
+    }else if(num1!=num2 && num2!=num3){
+        alert(`Ninguno de sus lados es igual, el triángulo es Escaleno`)
    
     }
     
