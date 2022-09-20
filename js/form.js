@@ -10,6 +10,16 @@ const reglas={
     password:/^(?=.+\d)(?=.*[#$%&!@])(?=.*[a-z])(?=.*[A-Z]).{8,}$/ //PASSWORD
 }
 
+const inputs={
+    numdoc:false,
+    nombre:false,
+    apellido:false,
+    correo:false,
+    telefono:false,
+    password:false
+}
+
+//Acceder al forumulario
 let form=document.getElementById("frm-usuario");
 let campos=document.querySelectorAll("#frm-usuario input")
 form.addEventListener('submit',e=>{
@@ -24,13 +34,14 @@ const validarInput=(regla,input,grupo)=>{
         document.querySelector(`#g-${grupo} i`).classList.add('fa-circle-check')
         document.querySelector(`#g-${grupo} i`).classList.remove('fa-circle-exclamation')
         document.querySelector(`#g-${grupo}  .msn-error`).classList.remove('msn-error-visible')
+        inputs[grupo]=true;
     }else{
         document.getElementById(`g-${grupo}`).classList.remove('success');
         document.getElementById(`g-${grupo}`).classList.add('error');
         document.querySelector(`#g-${grupo} i`).classList.remove('fa-circle-check')
         document.querySelector(`#g-${grupo} i`).classList.add('fa-circle-exclamation')
         document.querySelector(`#g-${grupo} .msn-error`).classList.add('msn-error-visible')
-    
+        inputs[grupo]=false;
     }
 } 
 
@@ -42,52 +53,25 @@ const validarCampos=(e)=>{
         break;
     
         case "nombre":
-            if (reglas.textos.test(e.target.value)) {
-                document.getElementById('g-nombre').classList.remove('error');
-                document.getElementById('g-nombre').classList.add('success');
-                document.querySelector('#g-nombre i').classList.add('fa-circle-check')
-                document.querySelector('#g-nombre i').classList.remove('fa-circle-exclamation')
-                document.querySelector('#g-nombre .msn-error').classList.remove('msn-error-visible')
-            }else{
-                document.getElementById('g-nombre').classList.remove('success');
-                document.getElementById('g-nombre').classList.add('error');
-                document.querySelector('#g-nombre i').classList.remove('fa-circle-check')
-                document.querySelector('#g-nombre i').classList.add('fa-circle-exclamation')
-                document.querySelector('#g-nombre .msn-error').classList.add('msn-error-visible')
-            
-            }
-            
+            validarInput(reglas.textos,e.target,e.target.name)
         break;
 
         case "apellido":
-            if (reglas.textos.test(e.target.value)) {
-                document.getElementById('g-apellido').classList.remove('error');
-                document.getElementById('g-nombre').classList.add('success');
-                document.querySelector('#g-nombre i').classList.add('fa-circle-check')
-                document.querySelector('#g-nombre i').classList.remove('fa-circle-exclamation')
-                document.querySelector('#g-nombre .msn-error').classList.remove('msn-error-visible')
-            }else{
-                document.getElementById('g-nombre').classList.remove('success');
-                document.getElementById('g-nombre').classList.add('error');
-                document.querySelector('#g-nombre i').classList.remove('fa-circle-check')
-                document.querySelector('#g-nombre i').classList.add('fa-circle-exclamation')
-                document.querySelector('#g-nombre .msn-error').classList.add('msn-error-visible')
-            
-            }
-            
+            validarInput(reglas.textos,e.target,e.target.name)
         break;
 
         case "telefono":
-            
+            validarInput(reglas.textos,e.target,e.target.name)
         break;
 
         case "correo":
-            
+            validarInput(reglas.correo,e.target,e.target.name)
         break;
 
-        
+        //Duplicidad de contraseña
         case "password":
-            
+            console.log(e.target.name)
+            validarInput(reglas.password,e.target,e.target.name)
         break;
         
         
@@ -99,4 +83,22 @@ const validarCampos=(e)=>{
 campos.forEach((campo)=>{
  campo.addEventListener("keyup",validarCampos);
  campo.addEventListener("blur",validarCampos)
+})
+form.addEventListener('submit',e=>{
+    e.preventDefault();
+    const terminos=document.getElementById("terminos");
+    if (inputs.numdoc && inputs.nombre && inputs.apellido && inputs.correo 
+        && inputs.telefono && inputs.password && terminos.checked) {
+        alert("El usuario ha sido registrado")
+        form.reset();
+        document.querySelectorAll('.success').forEach(icono=>{
+            icono.classList.remove('success')
+        })
+    }
+    else{
+        alert("los datos no cumplen")
+        document.querySelectorAll('.success').forEach(icono=>{
+            icono.classList.remove('error')
+        })
+    }
 })
