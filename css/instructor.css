@@ -28,10 +28,10 @@ body{
     background-size: cover;
 }
 
-
 h1, h2, h3,h4, h5 {
     font-family: 'Marcellus', serif;
 }
+
 #container-grid{
     display:flex;
     flex-direction: row;
@@ -75,7 +75,7 @@ nav{
 }
 
 .sec1{
-    background-image: url("https://soyhorizonte.com/wp-content/uploads/2020/10/JS-by-SoyHorizonte.gif");
+    background-image: url('../img/Js.gif');
     background-repeat: no-repeat;
     background-size: cover;
     height: 30%;
@@ -97,15 +97,10 @@ a{
 
 a:hover{
     color: #9C2759;
-    text-decoration: none;
 }
 
 .exit{
     margin-top: 80px;
-}
-
-.re{
-    display: none;
 }
 
 
@@ -113,8 +108,7 @@ a:hover{
 width: 650px;
 height: 500px;
 position: relative;
-top: 90px;
-color: blue;
+top: 40px;
 margin: auto;
 }
 a{

@@ -1,12 +1,12 @@
-*{
+    *{
     padding: 0;
     margin: 0;
-}
-body{
+    }
+    body{
     font-size: 16px;
-}
+    }
 
-.modal{
+    .modal{
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
@@ -16,42 +16,43 @@ body{
     overflow: auto;
     padding-top: 200px;
     display: none;
-}
+    }
 
-.contenidoModal{
+    .contenidoModal{
     background-color: antiquewhite;
-    width: 60%;
+    width: 50%;
     margin: auto;
+    border-radius: 20px;
     position: relative;
     padding: 1rem;
     animation-name: animarmodal;
     animation-duration: 0.6s;
-}
-@keyframes animarmodal{
-   from{top:-300px; opacity: 0;}
-   to{top: 0;opacity: 1;} 
-}
+    }
+    @keyframes animarmodal{
+    from{top:-300px; opacity: 0;}
+    to{top: 0;opacity: 1;} 
+    }
 
-.cerrarModal{
+    .cerrarModal{
     font-size: 1.5rem;
     float: right;
-}
+    }
 
-.cerrarModal:hover{
-cursor:pointer;
-}
+    .cerrarModal:hover{
+    cursor:pointer;
+    }
 
-.contenidoModal h2{
-    background-color: rgb(28, 28, 202);
-    color:aliceblue;
+    .contenidoModal h2{
+    background-color: rgb(86, 86, 161);
+    color:white;
     padding: 1rem 0;
     text-align: center;
     clear: both;
-}
+    }
 
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
 
-:root {
+    :root {
     --azulclaro: #48D6ED;
     --azuloscuro: #337AB7;
     --azulnegro: #303342;
@@ -63,27 +64,28 @@ cursor:pointer;
     --Magenta: #9C2759;
     --blanco: #fff;
     --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
-}
+    }
 
-*{
+    *{
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-}
+    }
 
-body{
+    body{
     background-image: url("https://cdn.pixabay.com/photo/2017/01/24/10/58/sand-2005066_960_720.jpg");
     background-repeat:no-repeat;
-    color:#eeee;
+    color:black;
+    text-align: center;
     background-size: cover;
-}
+    }
 
 
-h1, h2, h3,h4, h5 {
+    h1, h2, h3,h4, h5 {
     font-family: 'Marcellus', serif;
-}
-#container-grid{
+    }
+    #container-grid{
     display:flex;
     flex-direction: row;
     text-align: center;
@@ -91,17 +93,17 @@ h1, h2, h3,h4, h5 {
     padding: 1rem 1rem;
     justify-content: center;
 
-}
+    }
 
-nav{
+    nav{
     font-family: "Marcellus", serif;
     font-size: 1.3em;
     z-index:100;
     max-width: 50px;
     min-height:600px;
     width: 100%;
-}
-.menu{
+    }
+    .menu{
     width: 250px;
     height: 100%;
     background-color: var(--azulnegro);
@@ -110,66 +112,61 @@ nav{
     left: 0;
     font-size: 18px;
     z-index: 300;
-}
-.tittle{
+    }
+    .tittle{
     background-color: var(--negro2);
     color:var(--blanco);
     font-size: 2em;
     padding:0.5rem;
     top: -15px;
-}
-.menu i{
+    }
+    .menu i{
     color:var(--blanco);
     text-align: center;
     margin-top: 30px;
     width: 40px;
-}
+    }
 
-.sec1{
-    background-image: url("https://soyhorizonte.com/wp-content/uploads/2020/10/JS-by-SoyHorizonte.gif");
+    .sec1{
+    background-image: url('../img/Js.gif');
     background-repeat: no-repeat;
     background-size: cover;
     height: 30%;
 
-   
-}
+    
+    }
 
-.sec1 img{
+    .sec1 img{
     text-align: center;
     margin-top: 30px;
     width: 40px;
 
-}
+    }
 
-a{
+    a{
     text-decoration: none;
     color: var(--blanco);
-}
+    }
 
-a:hover{
+    a:hover{
     color: #9C2759;
-}
+    }
 
-.exit{
+    .exit{
     margin-top: 80px;
-}
+    }
 
-.re{
-    display: none;
-}
-
-
-#ini{
+    #ini{
     width: 850px;
-    height: 500px;
-    position: relative;
-    top: 90px;
-    
     margin: auto;
     }
     a{
       text-decoration: none;
     }
     label{
-      color:var(--blanco);
+      color:black
+    }
+    .card{
+
+        color: black;
     }

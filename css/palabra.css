@@ -22,8 +22,7 @@
     }
     
     body{
-        background-image: url("https://cdn.pixabay.com/photo/2017/01/24/10/58/sand-2005066_960_720.jpg");
-        background-repeat:no-repeat;
+        background-color: rgba(216, 116, 22, 0.952);
         color:#eeee;
         background-size: cover;
     }
@@ -75,7 +74,7 @@
     }
     
     .sec1{
-        background-image: url("https://soyhorizonte.com/wp-content/uploads/2020/10/JS-by-SoyHorizonte.gif");
+        background-image: url('../img/Js.gif');
         background-repeat: no-repeat;
         background-size: cover;
         height: 30%;
@@ -113,8 +112,9 @@
     width: 650px;
     height: 500px;
     position: relative;
-    top: 90px;
-    color: blue;
+    margin-left: 40px;
+    top: 30px;
+    margin: auto;
     }
     a{
       text-decoration: none;

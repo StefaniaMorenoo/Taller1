@@ -6,7 +6,7 @@
 const reglas={
     textos:/^[a-zA-ZÁ-ÿ\s]{1,40}$/, //SOLO LETRAS
     numeros:/^[0-9]{7,10}$/, //SOLO NÚMEROS
-    correo:/^[a-zA-Z0-9_+-.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, //CORREOS
+    correo: /^[a-zA-Z0-9_.+-]+@+[misena]+.[edu]+.[c]+[o]$/, //CORREOS
     password:/^(?=.+\d)(?=.*[#$%&!@])(?=.*[a-z])(?=.*[A-Z]).{8,}$/ //PASSWORD
 }
 
@@ -61,7 +61,7 @@ const validarCampos=(e)=>{
         break;
 
         case "telefono":
-            validarInput(reglas.textos,e.target,e.target.name)
+            validarInput(reglas.numeros,e.target,e.target.name)
         break;
 
         case "correo":
