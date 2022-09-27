@@ -42,6 +42,34 @@
     cursor:pointer;
     }
 
+    .cerrarModal2{
+    font-size: 1.5rem;
+    float: right;
+    }
+  
+    .cerrarModal2:hover{
+    cursor:pointer;
+    }
+    
+    .cerrarModal5{
+    font-size: 1.5rem;
+    float: right;
+    }
+  
+    .cerrarModal5:hover{
+    cursor:pointer;
+    }
+
+     .cerrarModal8{
+    font-size: 1.5rem;
+    float: right;
+    }
+  
+    .cerrarModal8:hover{
+    cursor:pointer;
+    }
+    
+
     .contenidoModal h2{
     background-color: rgb(86, 86, 161);
     color:white;

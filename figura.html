@@ -13,10 +13,10 @@
   <div id="ini">
     <div class="p-5">
         <div class="container"> 
-          <div class="p-5 text-white" style="border-radius: 20px; top:80%;">
+          <div class="p-5 text-white bg-dark" style="border-radius: 20px; top:80%;">
              <div class="col-sm">
               <center>
-                <h1 class="bg-dark">Figura</h1>
+                <h1 class="">Figura</h1>
         
         <div class="row">
           <div class="col-sm-6">
@@ -24,7 +24,7 @@
             <img src="img/cuadrado.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Cuadrado</h5>
-              <button class=" btn bg-warning form-control" id="abrirModalcp">Perimetro</button>
+              <button class=" btn bg-warning form-control" id="abrirModalpc">Perimetro</button>
               <div id="ventanaModal" class="modal">
                 <div class="contenidoModal">
                     <span class="cerrarModal">
@@ -32,31 +32,25 @@
                     </span>
                     <h2>Perimetro de un Cuadrado</h2>
                     <form action="">
-                      <label for="">Ingrese el lado</label>
-                      <input class="form-control" type="number" id="num1">
-                      <div id="ops">
-                        <button class="btn btn-dark " id="percu">Calcular</button>
-                        <div id="respuesta">
-                        </div>
+                      <input class="form-control" type="number" id="num1" placeholder="Ingrese el lado">
+                        <button class="btn bg-dark form-control text-white" id="percu">Calcular</button>
+                        <div id="rta">
                       </div>
                     </form>
                 </div>
               </div>
 
               <button  class=" btn bg-warning form-control" id="abrirModalac">Área</button>
-              <div id="ventanaModal" class="modal">
+              <div id="ventanaModal2" class="modal">
                 <div class="contenidoModal">
-                    <span class="cerrarModal">
+                    <span class="cerrarModal2">
                         <i class="fa-solid fa-xmark"></i>
                     </span>
                     <h2>Área de un Cuadrado</h2>
                     <form action="">
-                      <label for="">Ingrese un lado</label>
-                      <input class="form-control" type="number" id="num1">
-                      <div id="ops">
-                        <button class="btn btn-dark " id="sumabtn">Calcular</button>
-                        <div id="respuesta">
-                        </div>
+                      <input class="form-control" type="number" id="num" placeholder="Ingrese el lado">
+                        <button class="btn bg-dark form-control text-white" id="arecu">Calcular</button>
+                        <div id="rta2">
                       </div>
                     </form>
                 </div>
@@ -65,51 +59,48 @@
           </div>
           </div>
 
-          <div class="card" style="width: 18rem;">
-             <br>
+          <div class="card" style="width: 18rem;"><br>
             <img src="img/rec.png" class="card-img-top" alt="...">
             <div class="card-body"> 
               <h5 class="card-title">Rectángulo</h5>
               <button class=" btn bg-warning form-control" id="abrirModalpr">Perimetro</button>
-              <div id="ventanaModal" class="modal">
+
+              <div id="ventanaModal3" class="modal">
+                <div class="contenidoModal">
+                    <span class="cerrarModal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                    <h2>Perimetro de un Rectángulo</h2>
+                    <form action="">
+                      <input class="form-control" type="number" id="numr" placeholder="Ingrese la base">
+                      <input class="form-control" type="number" id="numr2" placeholder="Ingrese la altura">
+                        <button class="btn bg-dark form-control text-white" id="perir">Calcular</button>
+                        <div id="rta3">
+                      </div>
+                    </form>
+                </div>
+              </div>
+
+              <button  class=" btn bg-warning form-control" id="abrirAreaR">Área</button>
+              <div id="ventanaModal4" class="modal">
                 <div class="contenidoModal">
                     <span class="cerrarModal">
                         <i class="fa-solid fa-xmark"></i>
                     </span>
                     <h2>Área de un Rectángulo</h2>
                     <form action="">
-                      <label for="">Ingrese la base</label>
-                      <input class="form-control" type="number" id="num1">
-                      <label for="">Ingrese la altura</label>
-                      <input class="form-control" type="number" id="num2">
-                  
-                        <button class="btn btn-dark " id="btnar">Calcular</button>
-                        <div id="respuesta">
-                        </div>
-                    </form>
-                </div>
-              </div>
-              <button  class=" btn bg-warning form-control" id="abrirAreapr">Área</button>
-              <div id="ventanaModal" class="modal">
-                <div class="contenidoModal">
-                    <span class="cerrarModal">
-                        <i class="fa-solid fa-xmark"></i>
-                    </span>
-                    <h2>Área de un Rectanguloa </h2>
-                    <form action="">
-                      <label for="">Ingrese el radio</label>
-                      <input class="form-control" type="number" id="num1">
-                      <div id="ops">
-                        <button class="btn btn-dark form-control" id="sumabtn">Calcular</button>
-                        <div id="respuesta">
-                        </div>
+                      <input class="form-control" type="number" id="ba" placeholder="Ingrese la base">
+                      <input class="form-control" type="number" id="al" placeholder="Ingrese la altura">
+                        <button class="btn bg-dark form-control text-white" id="arer">Calcular</button>
+                        <div id="rta4">
                       </div>
                     </form>
                 </div>
               </div>
-            </div>
           </div>
-          </div>
+        </div>
+      </div>
+     
 
           <div class="row mt-sm-4 ">
             <div class="col-sm-6">
@@ -119,25 +110,42 @@
               <h5 class="card-title">Triángulo</h5>
               <button class=" btn bg-warning form-control" id="abrirModalpt">Perimetro</button>
 
-
-              <button  class=" btn bg-warning form-control" id="abrirAreat">Área</button>
-              <div id="ventanaModal" class="modal">
+              <div id="ventanaModal5" class="modal">
                 <div class="contenidoModal">
-                    <span class="cerrarModal">
+                    <span class="cerrarModal5">
                         <i class="fa-solid fa-xmark"></i>
                     </span>
-                    <h2>Área de un Triángulo</h2>
+                    <h2>Perimetro de un Triangulo</h2>
                     <form action="">
-                      <label for="">Ingrese el radio</label>
-                      <input class="form-control" type="number" id="num1">
-                      <div id="ops">
-                        <button class="btn btn-dark " id="sumabtn">Calcular</button>
-                        <div id="respuesta">
-                        </div>
+                      <input class="form-control" type="number" id="l1" placeholder="Ingrese una longitud">
+                      <input class="form-control" type="number" id="l2"  placeholder="Ingrese una longitud">
+                      <input class="form-control" type="number" id="l3"  placeholder="Ingrese una longitud">
+                        <button class="btn bg-dark form-control text-white" id="perTri">Calcular</button>
+                        <div id="rta5">
                       </div>
                     </form>
                 </div>
-              </div>
+              </div>              
+
+              <button  class=" btn bg-warning form-control" id="abrirAreat">Área</button>
+            
+              <div id="ventanaModal6" class="modal">
+                <div class="contenidoModal">
+                    <span class="cerrarModal5">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                    <h2>Area de un Triangulo</h2>
+                    <form action="">
+                      <input class="form-control" type="number" id="bas" placeholder="Ingrese la base">
+                      <input class="form-control" type="number" id="alt"  placeholder="Ingrese la altura">
+        
+                      <button class="btn bg-dark form-control text-white" id="areatr">Calcular</button>
+                      <div id="rta6">
+                      </div>
+                    </form>
+                </div>
+              </div>              
+
             </div>
           </div>
         </div>
@@ -146,43 +154,40 @@
             <img src="img/cir.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Circulo</h5>
-              <button class=" btn bg-warning form-control" id="abrirModalCP">Perimetro</button>
-              <div id="ventanaModal5" class="modal">
+              <button class=" btn bg-warning form-control" id="abrirModalcp">Perimetro</button>
+
+              <div id="ventanaModal7" class="modal">
                 <div class="contenidoModal">
                     <span class="cerrarModal">
                         <i class="fa-solid fa-xmark"></i>
                     </span>
                     <h2>Perimetro de un circulo</h2>
                     <form action="">
-                      <label for="">Ingrese el diametro</label>
-                      <input type="number" id="num1">
-                      <div id="ops">
-                        <button class="btn bg-dark " id="btnpercir">Calcular</button>
+                      <input class="form-control" type="number" id="dm" placeholder="Ingrese el Radio">
+                        <button class="btn bg-dark text-white form-control" id="btnr">Calcular</button>
                         <div id="respuesta">
                         </div>
-                      </div>
                     </form>
                 </div>
               </div>
-              <button  class=" btn form-control bg-warning" id="abrirModalC">Área</button>
-              <div id="ventanaModal" class="modal">
+
+              <button class="btn btn-warning form-control" id="abrirAreaC">Área</button>
+
+              <div id="ventanaModal8" class="modal">
                 <div class="contenidoModal">
-                    <span class="cerrarModal">
+                    <span class="cerrarModal8">
                         <i class="fa-solid fa-xmark"></i>
                     </span>
-                    <h2>Área de un circulo</h2>
+                    <h2>Área de un Circulo</h2>
                     <form action="">
-                      <label for="">Ingrese el radio</label>
-                      <input class="form-control" type="number" id="num1">
-                      <div id="ops">
-                        <br>
-                        <button class="btn btn-dark " id="sumabtn">Calcular</button>
-                        <div id="respuesta">
-                        </div>
+                      <input class="form-control" type="number" id="r2" placeholder="Ingrese el radio">
+                      <button class="btn bg-dark form-control text-white" id="btn2">Calcular</button>
+                      
+                      <div id="reta2">
                       </div>
                     </form>
                 </div>
-              </div>
+              </div> 
                   </center>
 
                 </div>  
