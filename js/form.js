@@ -73,6 +73,28 @@ const validarCampos=(e)=>{
             console.log(e.target.name)
             validarInput(reglas.password,e.target,e.target.name)
         break;
+        case "":
+            const validarPassword2 = () => {
+                const inputPassword1 = document.getElementById('password');
+                const inputPassword2 = document.getElementById('password2');
+            
+                if(inputPassword1.value !== inputPassword2.value){
+                    document.getElementById(`grupo__password2`).classList.add('formulario__grupo-incorrecto');
+                    document.getElementById(`grupo__password2`).classList.remove('formulario__grupo-correcto');
+                    document.querySelector(`#grupo__password2 i`).classList.add('fa-times-circle');
+                    document.querySelector(`#grupo__password2 i`).classList.remove('fa-check-circle');
+                    document.querySelector(`#grupo__password2 .formulario__input-error`).classList.add('formulario__input-error-activo');
+                    inputs['password'] = false;
+                } else {
+                    document.getElementById(`g-${grupo}`).classList.remove('success');
+                    document.getElementById(`g-${grupo}`).classList.add('error');
+                    document.querySelector(`#g-${grupo} i`).classList.remove('fa-circle-check');
+                    document.querySelector(`#g-${grupo} i`).classList.add('fa-circle-exclamation');
+                    document.querySelector(`#g-${grupo} .msn-error`).classList.add('msn-error-visible');
+                    inputs['password'] = true;
+                }
+            }
+        break;
         
         
         default :
@@ -101,4 +123,29 @@ form.addEventListener('submit',e=>{
             icono.classList.remove('error')
         })
     }
+})
+
+//Acceder al boton para abrir el modal
+let modal=document.getElementById("terminos");
+
+//Acceder a la ventana modal
+let ventana=document.getElementById("ventanaModal");
+
+//Acceder al boton modal  a la ventana 
+let cerrar=document.querySelector(".cerrarModal");
+
+modal.addEventListener("click", ()=>{
+    ventana.style.display="block";
+})
+
+cerrar.addEventListener("click", ()=>{
+    ventana.style.display="none";
+})
+
+window.addEventListener("click",(e)=>{
+    if (e.target==ventana) {
+        ventana.style.display="none";
+    }
+
+
 })
